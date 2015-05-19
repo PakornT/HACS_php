@@ -1,0 +1,35 @@
+.panel {
+	/*	float: left;*/
+		min-width: 150px;
+		min-height: 150px;
+	/*	min-width: 15px;*/
+	/*	max-width: 150px;*/
+	/*	max-height: 150px;*/
+	/*	display: block;*/
+		margin: 0.25em;
+	/*	padding: 1em 2em;*/
+		border: none;
+		font-size: 3em;
+		background: none;
+		color: inherit;
+		vertical-align: middle;
+		position: relative;
+		z-index: 1;
+		-webkit-backface-visibility: hidden;
+		-moz-osx-font-smoothing: grayscale;
+	}
+.panel.panel--appliance--list {
+		min-width: 50px;
+		min-height: 50px;
+		max-width: 300px;
+		max-height: 300px;
+	/*	min-width: 0;*/
+		font-size:2em;
+		padding: 0;
+		color: #37474f;
+		-webkit-transition: color 0.3s;
+		transition: color 0.3s;
+		border: 2px solid;
+	/*	border-radius: 10%;*/
+	/*	text-align: center;	*/
+	}

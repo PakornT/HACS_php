@@ -1,0 +1,148 @@
+/* Box colors */
+.bg-1 {
+	background: #ECEFF1;
+	color: #37474f;
+}
+.bg-2 {
+	background: #7986cb;
+	color: #ECEFF1;
+}
+.bg-3 {
+	background: #37474f;
+	color: #fff;
+}
+
+/* Common button styles */
+.button {
+/*	float: left;*/
+	min-width: 150px;
+	min-height: 150px;
+/*	min-width: 15px;*/
+/*	max-width: 150px;*/
+/*	max-height: 150px;*/
+/*	display: block;*/
+	margin: 0.25em;
+/*	padding: 1em 2em;*/
+	border: none;
+	font-size: 3em;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.button:focus {
+	outline: none;
+}
+.button > span {
+	vertical-align: middle;
+}
+
+/* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
+.bg-1 .button {
+	color: #37474f;
+	border-color: #37474f;
+}
+.bg-2 .button {
+	color: #ECEFF1;
+	border-color: #ECEFF1;
+}
+.bg-3 .button {
+	color: #fff;
+	border-color: #fff;
+}
+
+/* Sizes */
+.button--size-s {
+	font-size: 14px;
+}
+.button--size-m {
+	font-size: 16px;
+}
+.button--size-l {
+	font-size: 18px;
+}
+
+/* Typography and Roundedness */
+.button--text-upper {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.button--text-thin {
+	font-weight: 300;
+}
+.button--text-medium {
+	font-weight: 500;
+}
+.button--text-thick {
+	font-weight: 600;
+}
+.button--round-s {
+	border-radius: 5px;
+}
+.button--round-m {
+	border-radius: 15px;
+}
+.button--round-l {
+	border-radius: 40px;
+	border: 5px solid;
+}
+
+/* Borders */
+.button--border-thin {
+	border: 1px solid;
+}
+.button--border-medium {
+	border: 2px solid;
+}
+.button--border-thick {
+	border: 3px solid;
+}
+
+/* Aylen */
+.button.button--aylen {
+	background: #fff;
+	color: #37474f;
+	overflow: hidden;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+.button--aylen.button--inverted {
+	background: none;
+	color: #fff;
+}
+.button--aylen::before,
+.button--aylen::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 100%;
+	left: 0;
+	z-index: -1;
+/*	-webkit-transition: -webkit-transform 0.3s;*/
+/*	transition: transform 0.3s;*/
+/*	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);*/
+/*	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);*/
+}
+.button--aylen::before {
+	background: #7986cb;
+}
+.button--aylen::after {
+	background: #3f51b5;
+	
+}
+.button--aylen:hover {
+	color: #fff;
+}
+.button--aylen:hover::before,
+.button--aylen:hover::after {
+/*	-webkit-transform: translate3d(0, 100%, 0);*/
+/*	transform: translate3d(0, 100%, 0);*/
+}
+.button--aylen:hover::after {
+/*	-webkit-transition-delay: 0.175s;*/
+/*	transition-delay: 0.175s;*/
+}
